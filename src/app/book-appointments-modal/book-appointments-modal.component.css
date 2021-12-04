@@ -1,0 +1,14 @@
+.time-btn {
+  padding: 5px 10px;
+  box-shadow: 0 0 3px 3px rgb(231, 231, 231);
+  color: rgb(85, 85, 85);
+  margin: 10px;
+  border-radius: 25px;
+}
+.time-btn:hover {
+  color: rgb(241, 241, 241);
+  background-color: rgb(53, 53, 53);
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: none;
+}
