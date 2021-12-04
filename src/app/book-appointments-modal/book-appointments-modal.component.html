@@ -1,7 +1,7 @@
 <div class="modal1">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header border:none">
           <h5 class="modal-title">Doctor Availability</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -12,7 +12,7 @@
                 <h3>{{mObj.name}}</h3>
                 <p>{{mObj.specialist}}</p>
                 <p  class="d-flex">
-                    <span *ngFor="let time of mObj.timings" class="time-btn">{{time}}</span>
+                    <span *ngFor="let time of mObj.timings ; index as i" (click)="selctedTime(i)"  class="time-btn">{{time}}</span>
                     </p>
           </div>  
         </div>
